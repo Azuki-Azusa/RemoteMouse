@@ -62,13 +62,13 @@ func Press(code string) {
 		case "scroll_up":
 			if !pressing_scroll_up {
 				pressing_scroll_up = true
-				scroll_up()
+				go scroll_up()
 				fmt.Println("按下滑轮上滑")
 			}
 		case "scroll_down":
 			if !pressing_scroll_down {
 				pressing_scroll_down = true
-				scroll_down()
+				go scroll_down()
 				fmt.Println("按下滑轮下滑")
 			}
 		case "middle_press":
@@ -192,16 +192,16 @@ func double_click() {
 }
 
 func scroll_up() {
-	if (pressing_scroll_up) {
-		time.Sleep(10 * time.Millisecond)
-		robotgo.ScrollMouse(50, "up")
+	for pressing_scroll_up {
+		time.Sleep(100 * time.Millisecond)
+		robotgo.ScrollMouse(1, "up")
 	}
 }
 
 func scroll_down() {
-	if (pressing_scroll_down) {
-		time.Sleep(10 * time.Millisecond)
-		robotgo.ScrollMouse(50, "down")
+	for pressing_scroll_down {
+		time.Sleep(100 * time.Millisecond)
+		robotgo.ScrollMouse(1, "down")
 	}
 }
 
