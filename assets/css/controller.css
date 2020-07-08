@@ -1,0 +1,81 @@
+img { 
+    pointer-events: none; 
+}
+
+
+* {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    }
+
+.direction_div {
+   position:relative;
+   width: 200px;
+   height: 200px;
+}
+
+.direction_button {
+    width: 100%;
+    height: 100%;
+}
+
+.left_direction {
+	top: 10px;
+	left: 10px; 
+}
+/*right*/
+.right_direction {
+	top: -390px;
+	left: 410px;
+}
+/*top*/
+.up_direction {
+	top: 10px;
+	left: 210px; 
+}
+/*bottom*/
+.down_direction {
+	top: 10px;
+	left: 210px;
+}
+/*left_click*/
+.left_click {
+    top: -790px;
+	left: 10px;
+}
+/*right_click*/
+.right_click {
+    top: -990px;
+	left: 410px;
+}
+/*double_click*/
+.double_click {
+    top: -990px;
+    left: 210px;
+}
+/*middle_click*/
+.middle_click {
+    top: -1190px;
+    left: 660px;
+}
+/*scroll_up*/
+.scroll_up {
+    top: -1590px;
+    left: 660px;
+}
+/*scroll_down*/
+.scroll_down {
+    top: -1390px;
+    left: 660px;
+}
+
+.arrow_img {
+    width: 100%;
+    height: 100%
+}
+
+
