@@ -17,7 +17,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	var temp string
+	temp := "192.168.1.1"
 	fmt.Println("本机网卡中192开头的ip地址：")
 	for _, address := range addrs {
 
